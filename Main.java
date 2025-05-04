@@ -27,3 +27,20 @@ public static void main(String[] args) {
      System.out.println("Address : " + this.Address);
      }
     }
+
+class Teacher extends Employees{  
+    String Department;
+    String Subject;
+    Teacher(String id,String name,String addr,int salary,String dept,String subj){
+        super(id,name,addr,salary);
+        this.Department=dept;
+        this.Subject=subj;
+    }
+    void display(){
+        System.out.println("..........................................");
+        super.display();
+        System.out.println("Dept Name : " + this.Department);
+        System.out.println("Subject Name : " + this.Subject);
+        System.out.println("..........................................");
+    }
+}
